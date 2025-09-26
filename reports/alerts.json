@@ -1,0 +1,14 @@
+[
+    {
+        "ip": "192.168.1.10",
+        "falhas": 4,
+        "severidade": "MÉDIO",
+        "alerta": true
+    },
+    {
+        "ip": "192.168.1.20",
+        "falhas": 2,
+        "severidade": "BAIXO",
+        "alerta": false
+    }
+]

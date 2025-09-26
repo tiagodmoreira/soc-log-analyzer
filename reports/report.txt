@@ -1,0 +1,5 @@
+=== Relatório de Análise de Logs ===
+Gerado em: 2025-09-26 00:04:12.390260
+
+[MÉDIO] ALERTA: 192.168.1.10 teve 4 falhas de login!
+[BAIXO] 192.168.1.20 teve 2 falhas (dentro do limite).
