@@ -44,8 +44,9 @@ soc-log-analyzer/
 
 1. Clone este repositório:  
    ```bash
-   git clone https://[github.com/seu-usuario](https://github.com/tiagodmoreira)/soc-log-analyzer.git
-   cd soc-log-analyzer
+   git clone https://github.com/tiagodmoreira/soc-log-analyzer.git
+cd soc-log-analyzer
+
 
 
 
