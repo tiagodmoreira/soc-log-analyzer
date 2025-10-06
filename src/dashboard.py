@@ -3,9 +3,9 @@ import json
 import pandas as pd
 import plotly.express as px
 
-# ==============================
-# ⚙️ CONFIGURAÇÕES DA PÁGINA
-# ==============================
+
+# Configurações da Página
+
 st.set_page_config(
     page_title="SOC Dashboard",
     layout="wide"
@@ -35,9 +35,9 @@ st.markdown("""
 st.title("SOC Log Analyzer Dashboard")
 st.write("Visualização interativa e estilizada dos alertas gerados pelo analisador de logs.")
 
-# ==============================
-# 📂 CARREGAR DADOS
-# ==============================
+
+# Carregar Dados
+
 try:
     with open("reports/alerts.json", "r", encoding="utf-8") as f:
         data = json.load(f)
@@ -46,9 +46,9 @@ except FileNotFoundError:
     st.error("❌ Arquivo alerts.json não encontrado! Execute o analisador primeiro.")
     st.stop()
 
-# ==============================
-# 📊 KPIs DE RESUMO
-# ==============================
+
+# KPIs de Resumo
+
 total_ips = len(df)
 total_falhas = df["falhas"].sum()
 total_alertas = df[df["alerta"] == True].shape[0]
@@ -61,9 +61,9 @@ col2.metric("Alertas", total_alertas)
 col3.metric("Críticos", criticos)
 col4.metric("% de Alertas", f"{percent_alertas:.1f}%")
 
-# ==============================
-# 🧭 TOP 5 IPs SUSPEITOS
-# ==============================
+
+# Top 5 ips Suspeitos
+
 st.subheader("Top 5 IPs com mais falhas")
 top_ips = df.sort_values(by="falhas", ascending=False).head(5)
 
@@ -82,9 +82,8 @@ fig1 = px.bar(
 )
 st.plotly_chart(fig1, use_container_width=True)
 
-# ==============================
-# ⚠️ DISTRIBUIÇÃO DE SEVERIDADES
-# ==============================
+# Distribuioção de Severidades
+
 st.subheader("Distribuição por Severidade")
 
 fig2 = px.histogram(
@@ -102,7 +101,7 @@ fig2 = px.histogram(
 st.plotly_chart(fig2, use_container_width=True)
 
 
-# 🧾 TABELA COMPLETA DE ALERTAS
-# ==============================
+# Tabela Completa de Alertas
+
 st.subheader("Tabela Completa de Alertas")
 st.dataframe(df)
