@@ -1,0 +1,17 @@
+# Ignorar arquivos e pastas temporárias do Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Ignorar relatórios e logs gerados automaticamente
+reports/*.txt
+reports/*.log
+reports/*.json
+
+# Ignorar cache e arquivos locais do Streamlit
+.streamlit/
+
+# Ignorar configurações do VSCode e do sistema
+.vscode/
+.DS_Store
+Thumbs.db
