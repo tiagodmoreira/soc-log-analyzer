@@ -22,15 +22,15 @@ st.metric("Total de alertas", len(df))
 st.metric("IPs únicos", df['ip'].nunique())
 
 # Top 5 IPs suspeitos
-st.subheader("🔝 Top 5 IPs com mais falhas")
+st.subheader("Top 5 IPs com mais falhas")
 top_ips = df['ip'].value_counts().head(5)
 st.bar_chart(top_ips)
 
 # Distribuição de severidade
-st.subheader("⚠️ Distribuição por Severidade")
+st.subheader("Distribuição por Severidade")
 severity_counts = df['severidade'].value_counts()
 st.bar_chart(severity_counts)
 
 # Tabela de alertas completa
-st.subheader("📋 Tabela de Alertas")
+st.subheader("Tabela de Alertas")
 st.dataframe(df)
