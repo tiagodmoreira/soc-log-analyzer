@@ -5,7 +5,6 @@ import plotly.express as px
 
 
 # Configurações da Página
-
 st.set_page_config(
     page_title="SOC Dashboard",
     layout="wide"
@@ -37,7 +36,6 @@ st.write("Visualização interativa e estilizada dos alertas gerados pelo analis
 
 
 # Carregar Dados
-
 try:
     with open("reports/alerts.json", "r", encoding="utf-8") as f:
         data = json.load(f)
@@ -48,7 +46,6 @@ except FileNotFoundError:
 
 
 # KPIs de Resumo
-
 total_ips = len(df)
 total_falhas = df["falhas"].sum()
 total_alertas = df[df["alerta"] == True].shape[0]
@@ -63,7 +60,6 @@ col4.metric("% de Alertas", f"{percent_alertas:.1f}%")
 
 
 # Top 5 ips Suspeitos
-
 st.subheader("Top 5 IPs com mais falhas")
 top_ips = df.sort_values(by="falhas", ascending=False).head(5)
 
@@ -83,7 +79,6 @@ fig1 = px.bar(
 st.plotly_chart(fig1, use_container_width=True)
 
 # Distribuioção de Severidades
-
 st.subheader("Distribuição por Severidade")
 
 fig2 = px.histogram(
@@ -102,6 +97,5 @@ st.plotly_chart(fig2, use_container_width=True)
 
 
 # Tabela Completa de Alertas
-
 st.subheader("Tabela Completa de Alertas")
 st.dataframe(df)

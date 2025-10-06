@@ -1,25 +1,5 @@
 
-=== Envio simulado para SIEM em 2025-10-06 01:03:47.504949 ===
-{"ip": "192.168.1.10", "falhas": 5, "severidade": "ALTO", "alerta": true}
-{"ip": "192.168.1.20", "falhas": 3, "severidade": "MÉDIO", "alerta": true}
-{"ip": "192.168.1.30", "falhas": 5, "severidade": "ALTO", "alerta": true}
-{"ip": "192.168.1.40", "falhas": 2, "severidade": "BAIXO", "alerta": false}
-{"ip": "192.168.1.50", "falhas": 3, "severidade": "MÉDIO", "alerta": true}
-{"ip": "10.0.0.5", "falhas": 6, "severidade": "ALTO", "alerta": true}
-{"ip": "10.0.0.8", "falhas": 3, "severidade": "MÉDIO", "alerta": true}
-{"ip": "172.16.0.2", "falhas": 8, "severidade": "ALTO", "alerta": true}
-
-=== Envio simulado para SIEM em 2025-10-06 14:39:38.179439 ===
-{"ip": "192.168.1.10", "falhas": 5, "severidade": "ALTO", "alerta": true}
-{"ip": "192.168.1.20", "falhas": 3, "severidade": "MÉDIO", "alerta": true}
-{"ip": "192.168.1.30", "falhas": 5, "severidade": "ALTO", "alerta": true}
-{"ip": "192.168.1.40", "falhas": 2, "severidade": "BAIXO", "alerta": false}
-{"ip": "192.168.1.50", "falhas": 3, "severidade": "MÉDIO", "alerta": true}
-{"ip": "10.0.0.5", "falhas": 6, "severidade": "ALTO", "alerta": true}
-{"ip": "10.0.0.8", "falhas": 3, "severidade": "MÉDIO", "alerta": true}
-{"ip": "172.16.0.2", "falhas": 8, "severidade": "ALTO", "alerta": true}
-
-=== Envio simulado para SIEM em 2025-10-06 15:33:52.319542 ===
+=== Envio simulado para SIEM em 2025-10-06 19:00:20.375842 ===
 {"ip": "192.168.1.10", "falhas": 5, "severidade": "ALTO", "alerta": true}
 {"ip": "192.168.1.20", "falhas": 3, "severidade": "MÉDIO", "alerta": true}
 {"ip": "192.168.1.30", "falhas": 5, "severidade": "ALTO", "alerta": true}
