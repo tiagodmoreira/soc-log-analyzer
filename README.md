@@ -59,7 +59,8 @@ pip install -r requirements.txt
 python src/log_analyzer.py
 
 4️. Executar o dashboard interativo
-streamlit run src/dashboard.py
+ streamlit run src/dashboard.py
+
 
 
 
