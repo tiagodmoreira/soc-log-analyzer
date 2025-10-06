@@ -1,11 +1,11 @@
-=== Relatório de Análise de Logs ===
+=== Relatï¿½rio de Anï¿½lise de Logs ===
 Gerado em: 2025-10-04 19:01:25.834504
 
 [ALTO] ALERTA: 192.168.1.10 teve 5 falhas de login!
-[MÉDIO] ALERTA: 192.168.1.20 teve 3 falhas de login!
+[Mï¿½DIO] ALERTA: 192.168.1.20 teve 3 falhas de login!
 [ALTO] ALERTA: 192.168.1.30 teve 5 falhas de login!
 [BAIXO] 192.168.1.40 teve 2 falhas (dentro do limite).
-[MÉDIO] ALERTA: 192.168.1.50 teve 3 falhas de login!
+[Mï¿½DIO] ALERTA: 192.168.1.50 teve 3 falhas de login!
 [ALTO] ALERTA: 10.0.0.5 teve 6 falhas de login!
-[MÉDIO] ALERTA: 10.0.0.8 teve 3 falhas de login!
+[Mï¿½DIO] ALERTA: 10.0.0.8 teve 3 falhas de login!
 [ALTO] ALERTA: 172.16.0.2 teve 8 falhas de login!

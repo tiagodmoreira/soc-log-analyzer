@@ -25,18 +25,23 @@ soc-log-analyzer/
 │   └── sample_logs.txt
 │── reports/           # Relatórios gerados automaticamente
 │   ├── report.txt
-│   └── alerts.json
+│   ├── alerts.json
+│   └── collector.log  # Saída do SIEM simulado
 │── src/               # Código-fonte principal
-│   └── log_analyzer.py
+│   ├── log_analyzer.py
+│   └── send_to_siem.py  # Simulação de integração SIEM
 │── .gitignore
 │── requirements.txt
 │── README.md
 
+
+```markdown
 ## ⚙️ Tecnologias  
 - Python 3.13+  
 - Regex  
 - JSON  
 - Manipulação de arquivos  
+- Integração simulada com SIEM (log collector)
 
 ---
 
