@@ -1,8 +1,9 @@
 # 🛡️ SOC Log Analyzer  
 
-Um projeto prático de **cibersegurança**, desenvolvido em Python, que simula como um **SOC (Security Operations Center)** pode detectar tentativas de ataque de força bruta em acessos de login.  
+Um projeto prático de **Cibersegurança** que demonstra como um **SOC (Security Operations Center)** detecta e classifica **tentativas de força bruta** em logs de autenticação.  
+Desenvolvido em **Python**, este sistema analisa logs, identifica IPs suspeitos e gera relatórios automáticos em **TXT** e **JSON**.  
 
-O sistema analisa logs, identifica IPs suspeitos e gera relatórios em **TXT e JSON**.  
+🔒 Este projeto pode ser usado como base para sistemas de **detecção de intrusão (IDS)**, análise de **logs SSH** ou integração com **ferramentas SIEM**.
 
 ---
 
@@ -18,19 +19,18 @@ O sistema analisa logs, identifica IPs suspeitos e gera relatórios em **TXT e J
 
 ## 📂 Estrutura do Projeto  
 
-
+```bash
 soc-log-analyzer/
-│── data/ # Logs de exemplo
-│ └── sample_logs.txt
-│── reports/ # Relatórios gerados
-│ ├── report.txt
-│ └── alerts.json
-│── src/ # Código-fonte principal
-│ └── log_analyzer.py
+│── data/              # Logs de exemplo
+│   └── sample_logs.txt
+│── reports/           # Relatórios gerados automaticamente
+│   ├── report.txt
+│   └── alerts.json
+│── src/               # Código-fonte principal
+│   └── log_analyzer.py
 │── .gitignore
 │── requirements.txt
 │── README.md
-
 
 ## ⚙️ Tecnologias  
 - Python 3.13+  
