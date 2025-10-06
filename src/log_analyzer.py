@@ -30,7 +30,7 @@ def analyze_logs(file_path, threshold=3, report_path="reports/report.txt"):
     counter = Counter(ips)
 
     # Abre (ou cria) o relatório
-    with open(report_path, "w") as report:
+    with open(report_path, "w", encoding="utf-8") as report:
         report.write("=== Relatório de Análise de Logs ===\n")
         report.write(f"Gerado em: {datetime.now()}\n\n")
 
