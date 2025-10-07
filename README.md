@@ -1,21 +1,31 @@
-#🛡️ SOC Log Analyzer
+# 🛡️ SOC Log Analyzer
 
-O SOC Log Analyzer é um projeto prático de Cibersegurança e Análise de Logs desenvolvido em Python, que simula o funcionamento de um Security Operations Center (SOC) no processo de detecção e classificação de tentativas de força bruta em sistemas de autenticação.
-A solução automatiza a leitura e o tratamento de logs, identifica IPs suspeitos, classifica níveis de severidade e gera relatórios e alertas em TXT e JSON, podendo ser integrada a ferramentas SIEM ou usada como base para um IDS (Intrusion Detection System).
+O **SOC Log Analyzer** é um projeto prático de **Cibersegurança e Análise de Logs**, desenvolvido em **Python**, que simula o funcionamento de um **Security Operations Center (SOC)** no processo de **detecção e classificação de tentativas de força bruta** em sistemas de autenticação.
 
-🎯 Objetivo: Demonstrar, de forma simples e visual, como a automação e a análise de logs podem apoiar equipes de segurança na identificação precoce de ataques e no fortalecimento da observabilidade de ambientes críticos.
-
-Funcionalidades
-📂 Leitura e análise automatizada de logs simulados
-🔍 Detecção de IPs com falhas repetidas de autenticação (Regex)
-📊 Contagem e agrupamento de tentativas por endereço IP
-⚠️ Classificação inteligente de severidade: BAIXO, MÉDIO, ALTO, CRÍTICO
-📝 Geração automática de relatórios em TXT
-📑 Exportação de alertas em JSON para integração com outras ferramentas
+A solução **automatiza a leitura e o tratamento de logs**, identifica **IPs suspeitos**, **classifica níveis de severidade** e **gera relatórios e alertas em TXT e JSON**, podendo ser integrada a ferramentas **SIEM** ou usada como base para um **IDS (Intrusion Detection System)**.
 
 ---
 
-## 📂 Estrutura do Projeto  
+## 🎯 Objetivo
+
+Demonstrar, de forma simples e visual, como a **automção e a análise de logs** podem apoiar equipes de segurança na **identificação precoce de ataques** e no **fortalecimento da observabilidade** de ambientes críticos.
+
+---
+
+## 🚀 Funcionalidades
+
+* 📂 Leitura e análise automatizada de logs simulados
+* 🔍 Detecção de IPs com falhas repetidas de autenticação (Regex)
+* 📊 Contagem e agrupamento de tentativas por endereço IP
+* ⚠️ Classificação inteligente de severidade: **BAIXO, MÉDIO, ALTO, CRÍTICO**
+* 📝 Geração automática de relatórios em **TXT**
+* 📁 Exportação de alertas em **JSON** para integração com outras ferramentas
+* 📊 Visualização interativa com **Streamlit e Plotly**
+* 🛸️ Simulação de integração com **SIEM (Security Information and Event Management)**
+
+---
+
+## 📂 Estrutura do Projeto
 
 ```bash
 soc-log-analyzer/
@@ -32,39 +42,47 @@ soc-log-analyzer/
 │── .gitignore
 │── requirements.txt
 │── README.md
-
-
-```markdown
-## Tecnologias
-
-Python 3.13+
-Regex (expressões regulares)
-JSON / Manipulação de arquivos
-Streamlit + Plotly (visualização de dados)
-Integração SIEM simulada
+```
 
 ---
 
-## ▶️ Como Rodar  
+## ⚙️ Tecnologias
 
-1. Clone este repositório:  
-   ```bash
-   git clone https://github.com/tiagodmoreira/soc-log-analyzer.git
+* Python 3.13+
+* Regex (Expressões Regulares)
+* JSON / Manipulação de Arquivos
+* Streamlit + Plotly (Visualização de Dados)
+* Integração SIEM simulada
+
+---
+
+## ▶️ Como Rodar
+
+1️⃣ **Clone este repositório:**
+
+```bash
+git clone https://github.com/tiagodmoreira/soc-log-analyzer.git
 cd soc-log-analyzer
+```
 
-2. Instalar as dependências
+2️⃣ **Instale as dependências:**
+
+```bash
 pip install -r requirements.txt
+```
 
-3️. Executar o analisador de logs
+3️⃣ **Execute o analisador de logs:**
+
+```bash
 python src/log_analyzer.py
+```
 
-4️. Executar o dashboard interativo
- streamlit run src/dashboard.py
+4️⃣ **Inicie o dashboard interativo:**
 
+```bash
+streamlit run src/dashboard.py
+```
 
+---
 
-
-
-
-
-
+📈 Projeto desenvolvido para fins educacionais, demonstrando conceitos essenciais de **monitoramento, automação e análise de segurança**.
